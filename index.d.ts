@@ -4,7 +4,8 @@ type LoadOptions = {
     name: string,
     profiles: string[],
     label: string,
-    location: string
+    location: string,
+    user?: { name: string, password: string }
 }
 
 interface Config {
