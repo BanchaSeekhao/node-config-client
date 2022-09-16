@@ -21,7 +21,8 @@ configClient.load({
 	name:'application_name', // spring application name
 	profiles:['prod','test','dev'], // spring profiles    
 	label:'master', // git branch
-	location:'localhost:8888', // spring cloud server address
+	location:'localhost:8888', // spring cloud server address,
+	user:{ name:'admin', password:'admin' } // spring clould security
 
 }).then(config => {
   // getting configuration
